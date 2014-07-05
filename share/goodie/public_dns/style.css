@@ -1,20 +1,28 @@
-.zci--answer  table.publicdns {
+.zci--answer .publicdns
+{
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+.zci--answer  .publicdns .text--primary {
     font-family: Consolas,"Anonymous Pro",Anonymous,"Courier New",monospace;
-    font-size: 12px;
-    line-height: 14px;
 }
 
-.zci--answer table.publicdns td {
+.zci--answer .publicdns td {
     white-space: nowrap;
-    padding: 2px 4px;
-    border: 2px solid #fff;
+	padding-right: 1em;
 }
 
-.zci--answer table.publicdns th {
-    font-weight: bold;
+.zci--answer .publicdns th {
     text-align: center;
-    background-color: #888;
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 2px 4px;
+}
+
+.zci--answer .publicdns tr
+{
+	border-top: 1px solid rgba(155,155,155,.15);
+}
+
+.zci--answer .publicdns tr:nth-of-type(1)
+{
+	border-top: 0px;
 }

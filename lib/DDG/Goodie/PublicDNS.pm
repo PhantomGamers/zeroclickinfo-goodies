@@ -89,11 +89,11 @@ foreach my $server (@ordered_servers) {
         if ($column->{key} ne 'provider') {
             # Assuming we aren't displaying any non-provider string types!
             $text .= $column->{text_spacer}->(join($layout->{text_array}, @{$server->{$column->{key}}}));
-            $html .= '<td>' . (join($layout->{html_array}, @{$server->{$column->{key}}})) . '</td>';
+            $html .= '<td class="text--primary">' . (join($layout->{html_array}, @{$server->{$column->{key}}})) . '</td>';
         } else {
             # Special-case provider
             $text .= $column->{text_spacer}->($server->{$column->{key}});
-            $html .= '<td><a href="' . $server->{info_url} . '">' . $server->{$column->{key}} . '</a></td>';
+            $html .= '<td class="text--secondary"><a href="' . $server->{info_url} . '">' . $server->{$column->{key}} . '</a></td>';
         }
     }
     $text .= $layout->{text_col} . "\n";
