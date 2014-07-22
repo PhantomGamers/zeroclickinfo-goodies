@@ -1,6 +1,6 @@
-
-.zci--answer  .publicdns .record__cell__key {
+.zci--answer  .publicdns .record__cell {
     font-family: Consolas,"Anonymous Pro",Anonymous,"Courier New",monospace;
+    padding: 0.4em;
 }
 
 .zci--answer .publicdns td {
