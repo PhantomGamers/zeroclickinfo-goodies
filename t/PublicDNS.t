@@ -12,7 +12,7 @@ zci is_cached   => 1;
 # we got an answer with something approaching the correct form.
 # Hopefully, some one has eyeballed the output to make sure its got the right data.
 my $text_table = qr#^\+-+.*-+\+#m;
-my $html_table = qr#<table class="publicdns">.*</table>$#m;
+my $html_table = qr#<table class="publicdns[a-z ]*">.*</table>$#m;
 my $heading    = 'Public DNS Servers';
 
 ddg_goodie_test([qw( DDG::Goodie::PublicDNS)],
